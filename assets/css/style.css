@@ -102,7 +102,7 @@ p {
 div#home {
   background: #404040;
   position: relative;
-  height: 100vh;
+  min-height: 850px;
 }
 
 .bg_cover {
@@ -970,12 +970,6 @@ div#home {
   color: #fff;
 }
 
-@media (max-width: 767px) {
-  .header-hero-content .header-sub-title {
-    font-size: 24px;
-  }
-}
-
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .header-hero-content .header-sub-title {
     font-size: 30px;
@@ -983,7 +977,7 @@ div#home {
 }
 
 .header-hero-content .header-title {
-  font-size: 38px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #fff;
   margin-bottom: 25px;
@@ -1098,6 +1092,7 @@ div#home {
   padding: 50px 30px;
   border: 2px solid transparent;
   border-radius: 8px;
+  height: 100%;
 }
 
 @media (max-width: 767px) {
@@ -1364,6 +1359,48 @@ div#home {
   .counter-wrapper {
     padding-left: 0;
   }
+}
+
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1220px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1460px;
+  }
+}
+
+section#faqs .card {
+  -webkit-box-shadow: 0px 0px 18px 0px rgb(50 77 215 / 14%);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
+  box-shadow: 0px 0px 18px 0px rgb(50 77 215 / 14%);
+  border: 0 !important;
+}
+
+section#faqs .card-header {
+  margin-bottom: 0;
+  background: transparent;
+  border: 0;
+}
+
+section#faqs .card-header .btn-header-link {
+  box-shadow: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card-header .btn-header-link:after {
+  content: "\f107";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  float: right;
+}
+
+.card-header .btn-header-link.collapsed:after {
+  content: "\f106";
 }
 
 .counter-wrapper .counter-content .text {
