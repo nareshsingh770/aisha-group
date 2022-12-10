@@ -58,6 +58,17 @@
         </div>
     </div>
 
+    <div class="contactForm-sent" style="display: none;">
+        <div class="alert alert-success">
+            <strong>Thanks!</strong> For showing your interest.
+        </div>
+    </div>
+    <div class="newsLetterEmail-sent" style="display: none;">
+        <div class="alert alert-success">
+            <strong>Success!</strong> You subscribed to our Newsletters feeds.
+        </div>
+    </div>
+
     <header class="header-section mb-45">
         <div class="navbar-section">
             <div class="container">
@@ -95,9 +106,9 @@
                                 </ul>
                             </div>
 
-                            <div class="navbar-btn d-none d-sm-inline-block">
+                            <!-- <div class="navbar-btn d-none d-sm-inline-block">
                                 <a class="main-btn" data-scroll-nav="0" href="tel:8575758585">+91 8575758585</a>
-                            </div>
+                            </div> -->
                         </nav>
                     </div>
                 </div>
@@ -120,24 +131,27 @@
                         <form class="subscribe-form">
                             <div class="row">
                                 <div class="col-md-12 mb-3">
-                                    <label>Full Name</label>
-                                    <input type="text" placeholder="Enter Name">
+                                    <h4>Let's Connect.</h4>
                                 </div>
                                 <div class="col-md-12 mb-3">
-                                    <label>Email Address</label>
-                                    <input type="text" placeholder="Enter Email">
+                                    <label>Full Name*</label>
+                                    <input type="text" class='name' placeholder="Enter Name" required>
                                 </div>
                                 <div class="col-md-12 mb-3">
-                                    <label>Contact Number</label>
-                                    <input type="text" placeholder="Contact Number">
+                                    <label>Email Address*</label>
+                                    <input type="email" class="email" placeholder="Enter Email" required>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label>Contact Number*</label>
+                                    <input type="text" class="contact" placeholder="Contact Number" required>
                                 </div>
                                 <div class="col-md-12 mb-3">
                                     <label>Message</label>
-                                    <textarea></textarea>
+                                    <textarea class="message pt-2"></textarea>
                                 </div>
 
                                 <div class="col-md-12 text-right">
-                                    <button
+                                    <button type="submit"
                                         class="btn position-static border-0 rounded text-white p-0 px-5">Submit</button>
                                 </div>
                             </div>
@@ -806,9 +820,9 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="subscribe-form mt-50">
-                            <form action="#">
-                                <input type="text" placeholder="Enter eamil">
-                                <button class="main-btn">Subscribe</button>
+                            <form class="newsletter">
+                                <input type="email" class="news-letter" placeholder="Enter email" required>
+                                <button type="submit" class="main-btn submit-newsletter">Subscribe</button>
                             </form>
                         </div>
                     </div>
@@ -951,6 +965,11 @@
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+    <script src="assets/js/firebase.js"></script>
+
 
 </body>
 
