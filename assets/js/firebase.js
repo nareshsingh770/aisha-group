@@ -33,7 +33,6 @@ function submitForm(e) {
 
     setTimeout(() => {
         document.querySelector(".contactForm-sent").style.display = 'none'
-
     }, 3000)
 
 }
