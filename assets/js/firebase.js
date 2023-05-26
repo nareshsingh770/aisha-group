@@ -12,21 +12,26 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-var contactFormDB = firebase.database().ref('contactForm')
+var contactFormDB = firebase.database().ref('contactForm1')
 var newsLetterDB = firebase.database().ref('newsletter')
 
 document.querySelector(".subscribe-form").addEventListener("submit", submitForm);
+
 function submitForm(e) {
     e.preventDefault();
 
-    //   Get input Values
-    let name = document.querySelector(".name").value;
-    let email = document.querySelector(".email").value;
-    let contact = document.querySelector(".contact").value
-    let message = document.querySelector(".message").value;
-    console.log(name, email, contact, message);
+    const data = new FormData(e.currentTarget)
 
-    saveContactInfo(name, email, contact, message);
+    //   Get input Values
+    let contactObj = {}
+
+    for (const [key, value] of data)
+        contactObj = { ...contactObj, [key]: value }
+
+
+    console.log(contactObj);
+
+    saveContactInfo(contactObj);
 
     document.querySelector(".subscribe-form").reset();
     document.querySelector(".contactForm-sent").style.display = 'block'
@@ -37,15 +42,13 @@ function submitForm(e) {
 
 }
 
-function saveContactInfo(name, email, contact, message) {
+async function saveContactInfo(obj) {
     let newContactInfo = contactFormDB.push();
+    //console.log(newContactInfo)
 
-    newContactInfo.set({
-        name: name,
-        email: email,
-        contact: contact,
-        message: message,
-    });
+    const confirm = await newContactInfo.set(obj);
+
+    console.log(confirm)
 }
 
 document.querySelector('.newsletter').addEventListener('submit', (e) => {

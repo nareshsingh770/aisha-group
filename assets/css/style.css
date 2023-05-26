@@ -99,6 +99,12 @@ p {
   margin: 0px;
 }
 
+.logo-text {
+  font-size: 3.8rem;
+  margin-bottom: 26px;
+}
+
+
 div#home {
   background: #404040;
   position: relative;
@@ -955,7 +961,7 @@ div#home {
 }
 
 .header-hero-content {
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -1125,7 +1131,7 @@ div#home {
   transform: translate(-50%, -50%);
 }
 
-.single-services .services-icon i {
+.single-services .services-icon .icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1136,6 +1142,8 @@ div#home {
   transform: translate(-50%, -50%);
   font-size: 34px;
   color: #fff;
+  width: 43px;
+  image-rendering: pixelated;
 }
 
 .single-services .services-content .services-title a {
@@ -1778,12 +1786,24 @@ section#faqs .card-header .btn-header-link {
   box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
   border-radius: 10px;
   background-color: #fff;
+  width: 60%;
+  margin: auto;
+  min-width: 300px;
+}
+
+.subscribe-newsletter {
+  padding: 40px 50px 90px;
+  -webkit-box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
+  -moz-box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
+  box-shadow: 0px 0px 18px 0px rgba(50, 77, 215, 0.14);
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 #home .snap-to-center {
   position: absolute;
   bottom: -200px;
-  width: 50%;
+  width: 70%;
   min-width: 320px;
   left: 50%;
   transform: translate(-50%, 10px);
@@ -2006,6 +2026,14 @@ section#faqs .card-header .btn-header-link {
   .link-wrapper {
     padding: 0;
     padding-right: 50px;
+  }
+
+  .header-hero-content .header-sub-title {
+    font-size: 0.8rem;
+  }
+
+  .logo-text {
+    font-size: 2.7rem;
   }
 }
 
