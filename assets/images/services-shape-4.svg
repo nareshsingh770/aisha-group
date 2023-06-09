@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78 77" width="78" height="77">
+	<title>services-shape-3-svg</title>
+	<defs>
+		<linearGradient id="g1" x1="31" y1="-16.5" x2="38.5" y2="76.9" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#02bf02"/>
+			<stop offset="1" stop-color="#009595"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<path id="Path_7" class="s0" d="m18.1 0.5c20.5-4.9 58.9 28.7 58.9 47 0 18.2-53 34-67.8 28.1-14.8-5.9-11.7-70.2 8.9-75.1z"/>
+</svg>

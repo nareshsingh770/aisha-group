@@ -1100,7 +1100,7 @@ div#home {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  padding: 50px 30px;
+  padding: 15px 12px;
   border: 2px solid transparent;
   border-radius: 8px;
   height: 100%;
@@ -1152,7 +1152,7 @@ div#home {
 }
 
 .single-services .services-content .services-title a {
-  font-size: 26px;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #2E2E2E;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -1180,6 +1180,7 @@ div#home {
 
 .single-services .services-content .text {
   margin-top: 30px;
+  text-align: justify;
 }
 
 @media (max-width: 767px) {
