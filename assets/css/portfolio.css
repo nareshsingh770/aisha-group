@@ -1,0 +1,133 @@
+.grid {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.grid>li {
+    width: calc(100% / 3 - 30px);
+    aspect-ratio: 16/9;
+    padding: 7px;
+    margin: 0px 15px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #000;
+}
+
+.filters {
+    margin-top: 40px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid li img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.filters button {
+    padding: 10px 25px;
+    margin: 0px 5px;
+    background-color: #121212;
+    border: none;
+    border-radius: 10px;
+    transition: 150ms;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+}
+
+.filters button.is-checked {
+    background-color: #fff;
+    color: #121212;
+}
+
+.element-item>div {
+    overflow: hidden;
+    background-color: #121212;
+    color: #dddddd;
+}
+
+.element-item p {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #2a2a2a !important;
+}
+
+.element-item>div:hover:after {
+    content: "";
+}
+
+.element-item>div:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0096c39e;
+    cursor: pointer
+}
+
+.theme-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #000000a1;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.theme-preview img {
+    width: 83%;
+    min-width: 330px;
+}
+
+.theme-preview i {
+    position: absolute;
+    top: 1%;
+    right: 7%;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.theme-preview i:hover {
+    color: #bababa;
+}
+
+.back-btn {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .filters button {
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+    .grid>li {
+        width: calc(100% - 30px);
+    }
+
+    .element-item p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
