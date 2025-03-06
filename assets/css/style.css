@@ -107,6 +107,10 @@ p {
   font-size: 5.3rem;
   margin-bottom: 26px;
 }
+.logo-text-header {
+  font-size: 2rem;
+  font-weight: bolder;
+}
 
 
 div#home {
