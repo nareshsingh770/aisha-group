@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 span.wrapper-animation {
-  --content: 'Nex.';
+  --content: 'Aisha';
   --padding: 0.05em;
   --start-color: #0376e1;
   --end-color: #04e5de;
@@ -36,25 +36,16 @@ span.wrapper-animation:before {
 
 
 span.wrapper-animation.nex:before {
-  content: "Nex.";
-}
-
-span.wrapper-animation.gen:before {
-  content: "Gen.";
+  content: "Aisha";
 }
 
 span.wrapper-animation.soft:before {
-  content: "Soft";
+  content: "Group";
 }
 
 .nex .animated-gradient-text {
   animation: animated-gradient-text_fade-1 11s infinite;
   background-image: linear-gradient(90deg, #007cf0, #00dfd8);
-}
-
-.gen .animated-gradient-text {
-  animation: animated-gradient-text_fade-2 11s infinite;
-  background-image: linear-gradient(90deg, #c0f000, #00dfd8);
 }
 
 .soft .animated-gradient-text {
@@ -65,10 +56,6 @@ span.wrapper-animation.soft:before {
   background-image: linear-gradient(90deg, #007cf0, #00dfd8);
 }
 
-.gen .gradient-text {
-  background-image: linear-gradient(90deg, #c0f000, #00dfd8);
-}
-
 .soft .gradient-text {
   background-image: linear-gradient(90deg, #00f0e5, #ffa140)
 }
@@ -76,31 +63,13 @@ span.wrapper-animation.soft:before {
 @keyframes animated-gradient-text_fade-1 {
 
   0%,
-  16.667%,
+  25%,
   100% {
     opacity: 1;
   }
 
-  33.333%,
-  83.333% {
-    opacity: 0;
-  }
-}
-
-@keyframes animated-gradient-text_fade-2 {
-
-  0%,
-  100% {
-    opacity: 0;
-  }
-
-  33.333%,
-  50% {
-    opacity: 1;
-  }
-
-  16.667%,
-  66.667% {
+  50%,
+  75% {
     opacity: 0;
   }
 }
@@ -108,13 +77,12 @@ span.wrapper-animation.soft:before {
 @keyframes animated-gradient-text_fade-3 {
 
   0%,
-  50%,
   100% {
     opacity: 0;
   }
 
-  66.667%,
-  83.333% {
+  75%,
+  100% {
     opacity: 1;
   }
 }

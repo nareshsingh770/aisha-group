@@ -13,10 +13,10 @@ $(function () {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-section").removeClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/logo.svg");
+            $(".navbar .navbar-brand img").attr("src", "./assets/images/logo.png");
         } else {
             $(".navbar-section").addClass("sticky");
-            $(".navbar .navbar-brand img").attr("src", "assets/images/logo-2.svg");
+            $(".navbar .navbar-brand img").attr("src", "./assets/images/logo-2.png");
         }
     });
 
@@ -164,10 +164,10 @@ $(function () {
                         }
                     },
                     "color": {
-                        "value": "#de8622"
+                        "value": "#ffffff"
                     },
                     "shape": {
-                        "type": "edge",
+                        "type": "circle",
                         "stroke": {
                             "width": 0,
                             "color": "#000000"
@@ -262,7 +262,8 @@ $(function () {
                         }
                     }
                 },
-                "retina_detect": true
+                "retina_detect": true,
+                "background-color": "#141c4d"
             });
 
     if (document.getElementById("particles-2"))
