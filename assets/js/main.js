@@ -262,8 +262,7 @@ $(function () {
                         }
                     }
                 },
-                "retina_detect": true,
-                "background-color": "#141c4d"
+                "retina_detect": true
             });
 
     if (document.getElementById("particles-2"))
